@@ -1,4 +1,4 @@
-# 🎓 CampusHub – Student Campus Management System
+#  CampusHub – Student Campus Management System
 
 **CampusHub** is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application designed to streamline campus operations for students, teachers, and administrators. It provides role-based dashboards, user authentication, and course management — all in one modern, responsive platform.
 
@@ -17,7 +17,7 @@
 * **Post announcements** for students
 * View and manage enrolled students *(UI only)*
 
-### 🧑‍💼 Admin Dashboard
+###  Admin Dashboard
 
 * **Add, edit, or delete** students, teachers, and courses
 * Manage user roles and platform data
@@ -25,7 +25,7 @@
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer          | Technology                                   |
 | -------------- | -------------------------------------------- |
@@ -35,25 +35,6 @@
 | Authentication | JWT (JSON Web Token)                         |
 | Deployment     | Render (Backend) + Vercel (Frontend)         |
 
----
-
-##  Project Structure
-
-campushub/
-├── campus-client/        # React Frontend
-│   ├── src/
-│   │   ├── components/   # Reusable UI components
-│   │   ├── pages/        # Login, Register, Dashboard, Home, profile, ProtectedRoute pages
-│   │   └── api/          # Axios setup for API requests
-│   └── package.json
-│
-└── campus-server/        # Node + Express Backend
-    ├── models/           # Mongoose schemas
-    ├── routes/           # API routes
-    ├── controllers/      # Logic handling
-    ├── middleware/       # JWT auth, validation
-    └── server.js
-```
 
 ## Installation & Setup
 
@@ -113,7 +94,7 @@ npm run dev
 
 ---
 
-## 🎨 UI Highlights
+##  UI Highlights
 
 * Modern **gradient design** with Tailwind CSS
 * **Motion animations** using Framer Motion
@@ -131,7 +112,7 @@ npm run dev
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 *  Real-time notifications for announcements
 *  Attendance tracking backend logic
@@ -157,6 +138,4 @@ This project is open-source and available under the **MIT License**.
 ## Author
 
 **Aanjali Kumari**
-BCA Student | Web Developer | MERN Stack Enthusiast
-📧 [Your Email]
-🌐 [Your Portfolio or GitHub Profile]
+
