@@ -7,17 +7,14 @@ import courseRoutes from "./routes/courseRoutes.js"
 import studentRoutes from "./routes/studentRoutes.js";
 import cors from "cors";
 
-
-// import cors from "cors";
 app.use(cors({
-  origin: "campus-hub-gamma.vercel.app", // your frontend URL
+  origin: "https://campus-hub-aanjalis-projects.vercel.app/",
   credentials: true,
 }));
 
 dotenv.config();
 
 const app = express();
-// app.use(cors());
 
 app.use(express.json());
 
