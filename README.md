@@ -6,7 +6,7 @@ It provides secure authentication, role-based dashboards, and efficient course m
 ---
 
 ## Live Demo
-Visit the live website here: [CampusHub](https://campushub-client.onrender.com)
+Visit the live website here: [CampusHub](https://campus-hub-gamma.vercel.app/)
 
 ## Features
 
@@ -72,7 +72,7 @@ Start the backend:
 npm start
 ```
 
-### 3️⃣ Setup the Frontend
+### Setup the Frontend
 
 ```bash
 cd ../campus-client
@@ -127,7 +127,7 @@ npm run dev
 
 **Aanjali Kumari**
 *Full Stack Web Developer*
-📍 *India*
+*India*
 
 ---
 
