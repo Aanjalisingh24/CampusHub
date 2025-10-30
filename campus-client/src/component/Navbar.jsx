@@ -3,19 +3,20 @@ import { useState } from "react";
 
 function Navbar() {
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false); // 👈 For mobile toggle
+  const [menuOpen, setMenuOpen] = useState(false);
   const token = localStorage.getItem("token");
   const role = localStorage.getItem("role");
   const user = JSON.parse(localStorage.getItem("user")) || null;
 
   const handleLogout = () => {
-    localStorage.clear();
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
     navigate("/");
   };
 
   return (
     <nav className="bg-blue-950 text-white shadow-lg p-4 flex justify-between items-center sticky top-0 z-50">
-      {/* Logo */}
+    
       <div
         className="font-extrabold text-xl tracking-wide cursor-pointer hover:text-yellow-300 transition-colors duration-300"
         onClick={() => navigate("/")}
@@ -23,7 +24,6 @@ function Navbar() {
         CampusHub
       </div>
 
-      {/* ☰ Mobile Menu Button */}
       <button
         className="md:hidden text-white text-2xl focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -31,7 +31,7 @@ function Navbar() {
         {menuOpen ? "✕" : "☰"}
       </button>
 
-      {/* Desktop Links */}
+  
       <div className="hidden md:flex gap-4 text-white items-center">
         {token ? (
           <>
@@ -85,7 +85,6 @@ function Navbar() {
         )}
       </div>
 
-      {/* Mobile Menu (visible only when ☰ clicked) */}
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-blue-950 flex flex-col items-center gap-4 py-4 md:hidden">
           {token ? (

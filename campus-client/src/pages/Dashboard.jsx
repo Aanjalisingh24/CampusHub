@@ -112,17 +112,17 @@ function Dashboard() {
  return (
   <div className="min-h-screen bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-700 p-4 sm:p-6 md:p-8">
     <div className="w-full max-w-6xl mx-auto">
-      {/* Greeting */}
+     
       <p className="text-xl sm:text-2xl font-extrabold text-white text-center mb-6 sm:mb-10 drop-shadow-lg uppercase leading-snug">
         {user.role === "student" && `Hi ${user.name}, Welcome to your courses!`}
         {user.role === "teacher" && `Hi ${user.name}, Welcome to your teaching dashboard!`}
         {user.role === "admin" && `Hi ${user.name}, Welcome to the admin panel!`}
       </p>
 
-      {/* ---------- ADMIN DASHBOARD ---------- */}
+    
       {user.role === "admin" && (
         <>
-          {/* Courses Section */}
+        
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mb-6 sm:mb-10">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 sm:mb-6 border-b-2 border-blue-200 pb-2">
               Courses Management
@@ -141,7 +141,7 @@ function Dashboard() {
             />
           </section>
 
-          {/* Students Section */}
+      
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 sm:mb-6 border-b-2 border-blue-200 pb-2">
               Students Management
@@ -161,10 +161,10 @@ function Dashboard() {
         </>
       )}
 
-      {/* ---------- TEACHER DASHBOARD ---------- */}
+     
       {user.role === "teacher" && (
         <>
-          {/* My Courses */}
+        
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mb-6 sm:mb-10">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 sm:mb-6 border-b-2 border-blue-200 pb-2">
               My Courses
@@ -178,7 +178,7 @@ function Dashboard() {
             />
           </section>
 
-          {/* Enrolled Students */}
+          
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 overflow-x-auto">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 sm:mb-6 border-b-2 border-blue-200 pb-2">
               Enrolled Students
@@ -204,7 +204,7 @@ function Dashboard() {
             })() : <p>No courses assigned yet.</p>}
           </section>
 
-          {/* Upload Assignment */}
+         
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mt-8">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 border-b-2 border-blue-200 pb-2">
               Upload Assignment
@@ -228,7 +228,7 @@ function Dashboard() {
             </form>
           </section>
 
-          {/* Attendance Table */}
+        
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mt-8 overflow-x-auto">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 border-b-2 border-blue-200 pb-2">
               Mark Attendance
@@ -256,7 +256,7 @@ function Dashboard() {
             </button>
           </section>
 
-          {/* Grade Assignments */}
+
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mt-8 overflow-x-auto">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 border-b-2 border-blue-200 pb-2">
               Grade Assignments
@@ -285,7 +285,7 @@ function Dashboard() {
             </table>
           </section>
 
-          {/* Announcement */}
+         
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mt-8">
             <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-4 border-b-2 border-blue-200 pb-2">
               Post Announcement
@@ -307,7 +307,7 @@ function Dashboard() {
         </>
       )}
 
-      {/* ---------- STUDENT DASHBOARD ---------- */}
+     
       {user.role === "student" && (
         <>
           <section className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 sm:p-6 mb-6 sm:mb-10">
