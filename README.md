@@ -1,48 +1,55 @@
-#  CampusHub – Student Campus Management System
+# CampusHub – Student Campus Management System
 
-**CampusHub** is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application designed to streamline campus operations for students, teachers, and administrators. It provides role-based dashboards, user authentication, and course management — all in one modern, responsive platform.
+**CampusHub** is a full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** web application that simplifies campus operations for **students**, **teachers**, and **administrators**.
+It provides secure authentication, role-based dashboards, and efficient course management — all within a modern, responsive interface.
 
 ---
+
+## Live Demo
+Visit the live website here: [CampusHub](https://campushub-client.onrender.com)
+
 ## Features
 
 ### Student Dashboard
 
-* View **personalized courses** and **available courses**
-*  Can Update profile 
+* View **personalized and available courses**
+* Update **profile picture**
 
-### Teacher Dashboard
+###  Teacher Dashboard
 
-* Manage assigned courses
-* **Upload assignments** and **mark attendance**
-* **Post announcements** for students
-* View and manage enrolled students *(UI only)*
+* Manage and update **assigned courses**
+* **Upload assignments** & **mark attendance**
+* Post **announcements** for students
+* View and manage **enrolled students** *(UI only)*
 
 ###  Admin Dashboard
 
-* **Add, edit, or delete** students, teachers, and courses
-* Manage user roles and platform data
-* Centralized control over the system
+* **Add, edit, and delete** students, teachers, and courses
+* Manage **user roles** and platform data
+* Full **system control** from a single dashboard
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
-| Layer          | Technology                                   |
-| -------------- | -------------------------------------------- |
-| Frontend       | React.js (with Tailwind CSS & Framer Motion) |
-| Backend        | Node.js + Express.js                         |
-| Database       | MongoDB (Mongoose ORM)                       |
-| Authentication | JWT (JSON Web Token)                         |
-| Deployment     | Render (Backend) + Vercel (Frontend)         |
+| Layer              | Technology                            |
+| ------------------ | ------------------------------------- |
+| **Frontend**       | React.js, Tailwind CSS, Framer Motion |
+| **Backend**        | Node.js, Express.js                   |
+| **Database**       | MongoDB (via Mongoose)                |
+| **Authentication** | JSON Web Token (JWT)                  |
+| **Deployment**     | Render (Backend) + Vercel (Frontend)  |
 
+---
 
-## Installation & Setup
+##  Installation & Setup (Developer Mode)
 
-### Clone the Repositories
+### Clone the repositories
 
 ```bash
 git clone https://github.com/<your-username>/campushub-client.git
 git clone https://github.com/<your-username>/campushub-server.git
+```
 
 ### Setup the Backend
 
@@ -65,20 +72,14 @@ Start the backend:
 npm start
 ```
 
-### Setup the Frontend
+### 3️⃣ Setup the Frontend
 
 ```bash
 cd ../campus-client
 npm install
 ```
 
-Create a `.env` file:
-
-```
-VITE_API_URL=https://campushub-server.onrender.com
-```
-
-Start the frontend:
+Run the frontend:
 
 ```bash
 npm run dev
@@ -86,7 +87,7 @@ npm run dev
 
 ---
 
-##  Deployment
+##  Deployment Details
 
 * **Backend:** [Render](https://render.com)
 * **Frontend:** [Vercel](https://vercel.com)
@@ -96,33 +97,39 @@ npm run dev
 
 ##  UI Highlights
 
-* Modern **gradient design** with Tailwind CSS
-* **Motion animations** using Framer Motion
-* **Responsive layout** for all devices
-* Clean and user-friendly dashboards
+* Sleek **gradient-based design** with Tailwind CSS
+* Smooth **animations** using Framer Motion
+* Fully **responsive** and mobile-friendly
+* Clean, intuitive role-based dashboards
 
 ---
 
-## Authentication Flow
+##  Authentication Flow
 
-1. User registers as **Student / Teacher / Admin**
-2. JWT token is generated and stored in local storage
-3. Role-based dashboards are rendered after login
-4. Logout clears all stored user data
-
----
-
-##  Future Improvements
-
-*  Real-time notifications for announcements
-*  Attendance tracking backend logic
-*  Assignment upload & submission system
-*  Email alerts for students and teachers
-*  Admin analytics dashboard
+1. User registers as **Student**, **Teacher**, or **Admin**
+2. A **JWT token** is generated and stored in localStorage
+3. Dashboard is rendered based on **user role**
+4. **Logout** clears all stored user data securely
 
 ---
 
-## Author
+##  Future Enhancements
+
+* Real-time notifications for announcements
+* Complete attendance tracking backend logic
+* Assignment upload and submission system
+* Email alerts for students & teachers
+* Admin analytics dashboard with reports
+
+---
+
+##  Author
 
 **Aanjali Kumari**
+*Full Stack Web Developer*
+📍 *India*
+
+---
+
+> *CampusHub bridges communication between students, teachers, and admins — making campus management smarter and simpler.*
 
